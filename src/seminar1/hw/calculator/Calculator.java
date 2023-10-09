@@ -1,4 +1,4 @@
-package seminar1.model;
+package seminar1.hw.calculator;
 
 public class Calculator {
     public static int calculation(int firstOperand, int secondOperand, char operator) {
@@ -53,6 +53,12 @@ public class Calculator {
      * @return возвращает сумму покупки с учетом скидки
      */
     public static double calculatingDiscount(double purchaseAmount, int discountAmount) {
-        return 0;
+        if (purchaseAmount <= 0) {
+            throw new ArithmeticException("Сумма покупки должна быть положительной");
+        }
+        if (discountAmount < 0 || discountAmount > 100) {
+            throw new ArithmeticException("Неверная сумма скидки");
+        }
+        return purchaseAmount * (100 - discountAmount) / 100;
     }
 }

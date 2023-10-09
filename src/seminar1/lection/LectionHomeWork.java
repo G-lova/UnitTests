@@ -1,7 +1,7 @@
 package seminar1.lection;
 
 
-import seminar1.model.Calculator;
+import seminar1.hw.calculator.Calculator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

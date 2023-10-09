@@ -1,4 +1,4 @@
-package seminar1.hw;
+package seminar1.hw.productShop;
 
 import java.util.List;
 

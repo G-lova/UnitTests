@@ -1,4 +1,6 @@
-import seminar1.model.Calculator;
+package seminar1.hw.calculator;
+
+import seminar1.hw.calculator.Calculator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -51,5 +53,30 @@ public class CalculatorTest {
 
         System.out.println(Calculator.calculation(2_147_483_647, 1, '+')); // integer overflow
         System.out.println(Calculator.squareRootExtraction(169));
+
+
+        // Проверка скидки 10% на сумму покупки 100
+        assertThat(Calculator.calculatingDiscount(100, 10)).isEqualTo(90);
+
+        // Проверка скидки 20% на сумму покупки 200
+        assertThat(Calculator.calculatingDiscount(200, 20)).isEqualTo(160);
+
+        // Проверка скидки 50% на сумму покупки 50
+        assertThat(Calculator.calculatingDiscount(50, 50)).isEqualTo(25);
+
+        // Проверка суммы покупки 0, ожидается исключение
+        assertThatThrownBy(() -> Calculator.calculatingDiscount(0, 10))
+                .isInstanceOf(ArithmeticException.class)
+                .hasMessage("Сумма покупки должна быть положительной");
+
+        // Проверка отрицательного значения скидки, ожидается исключение
+        assertThatThrownBy(() -> Calculator.calculatingDiscount(100, -10))
+                .isInstanceOf(ArithmeticException.class)
+                .hasMessage("Неверная сумма скидки");
+
+        // Проверка скидки больше 100%, ожидается исключение
+        assertThatThrownBy(() -> Calculator.calculatingDiscount(100, 110))
+                .isInstanceOf(ArithmeticException.class)
+                .hasMessage("Неверная сумма скидки");
     }
 }
