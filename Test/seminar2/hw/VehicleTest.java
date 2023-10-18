@@ -1,6 +1,7 @@
-package seminar2.hw;
-
 import org.junit.jupiter.api.Test;
+import seminar2.hw.Car;
+import seminar2.hw.Motorcycle;
+import seminar2.hw.Vehicle;
 
 import static org.junit.jupiter.api.Assertions.*;
 

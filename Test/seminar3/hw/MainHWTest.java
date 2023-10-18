@@ -1,12 +1,15 @@
+import org.junit.Before;
 import org.junit.Test;
 import seminar3.hw.MainHW;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MainHWTest {
     private MainHW number;
-    @before
-    public void createNumber {
+    @Before
+    public void createNumber() {
         number = new MainHW();
     }
 

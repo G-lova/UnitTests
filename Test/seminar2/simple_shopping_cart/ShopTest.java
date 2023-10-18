@@ -1,7 +1,5 @@
-package seminar2.simple_shopping_cart;
-
 import org.junit.jupiter.api.Test;
-import seminars.second.model.Product;
+import seminar2.model.Product;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
