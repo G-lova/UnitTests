@@ -3,6 +3,7 @@
 **[Код тестов](https://github.com/G-lova/UnitTests/blob/master/Test/seminar6/AverageCalculatorTest.java)**
 
 **Отчет о покрытии тестами**
+
 ![Отчет о покрытии тестами](Coverage.png)
 
 **Объяснение того, какие сценарии покрыты тестами и почему вы выбрали именно эти сценарии**
