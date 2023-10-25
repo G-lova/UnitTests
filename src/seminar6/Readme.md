@@ -1,8 +1,6 @@
 **[Код программы](AverageCalculator.java)**
 
-**[Код тестов](AverageCalculatorTest.java)**
-
-**Отчет Checkstyle**
+**[Код тестов](https://github.com/G-lova/UnitTests/blob/master/Test/seminar6/AverageCalculatorTest.java)**
 
 **Отчет о покрытии тестами**
 ![Отчет о покрытии тестами](Coverage.png)
